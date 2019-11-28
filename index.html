@@ -3,11 +3,20 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Pong</title>
+		<link rel="stylesheet" href="./src/styles/game.css">
 	</head>
 	<body>
 		<div class="game-wrapper">
 			<h1>Pong!</h1>
-			<div id="game"></div>
+			<div id="game">
+				<svg width="1024px" height="512px">
+					<rect width="1024px" height="512px" fill="#353535"></rect>
+					<rect height="56" width="8"></rect>
+					<line stroke-dasharray="20, 4" x1="512" y1="0" x2="514" y2="512" stroke="white" stroke-width="4"></line>
+					<rect height="56" width="8"></rect>
+					<circle id="ball" r="8" cx="512" cy="256" fill="white"></circle>
+				</svg>
+			</div>
 			<!-- Rough-out your SVG mark-up here to start... -->
 		</div>
 		<script type="text/javascript" src="./src/index.js"></script>
